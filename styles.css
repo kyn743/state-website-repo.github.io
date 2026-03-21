@@ -1,0 +1,580 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+/* --- Header Section --- */
+
+li, a, button {
+    font-weight: 500;
+    color: #f1c66b;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #281C59;
+    overflow: hidden;
+}
+
+header h1 a.logo {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    float: left;
+    padding: 12px;
+    text-align: center;
+}
+
+header h1 a:hover {
+    color:#FF555B;
+    text-decoration: none;
+
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    color: #f1c66b;
+    float: right;
+}
+
+.nav-links li a:hover {
+    color: #FF555B;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #7DB9EF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+button a:hover {
+    color: #FF555B;
+}
+
+/* --- Hero Section (Home Page) --- */
+
+.hero {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+
+.hero-text {
+    position: relative;
+    top: 50%;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #C10209;
+}
+
+.hero-text p {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #281C59;
+    width: auto;
+    margin-top: 20px;
+}
+
+/* --- Hero Section (All Other Pages) --- */
+
+.hero-content-text {
+    position: relative;
+    top: 50%;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-content-text h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #C10209;
+    margin-bottom: 20px;
+}
+
+.hero-content-text h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFAD00;
+}
+
+.hero-content-text p {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #281C59;
+    width: auto;
+    margin-top: 20px;
+}
+
+
+/* --- Container Content Section --- */
+
+#container {
+    display: flex;
+    background-color: #F0F4FF;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+article {
+    flex: 0 1 50%;
+}
+
+main {
+    flex: 0 1 0;
+}
+
+aside {
+    flex: 0 1 50%;
+}
+
+/* --- Article Section --- */
+
+.article-section {
+    padding: 20px 40px;
+    position: relative;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.article-section h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #f1c66b;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.article-content {
+    background: #281C59;
+    padding: 30px 20px;
+    margin: 10px 20px;
+    width: 90%;
+    height: auto;
+    float: left;
+}
+
+.content-block {
+    margin-bottom: 20px;
+}
+
+.content-block p {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --- Article Section (All Other Pages) ---*/
+
+.content-block h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #7DB9EF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* --- Aside Section (General) --- */
+
+.aside-section {
+    padding: 20px 40px;
+    position: relative;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.aside-content {
+    background: #281C59;
+    padding: 30px 20px;
+    margin: 10px 20px;
+    height: auto;
+    float: right;
+}
+
+.aside-header h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #f1c66b;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- Aside Section (Home Page) ---*/
+
+aside .image-container {
+    max-width: 100%;
+    height: 120px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+    object-fit: cover;
+    position: relative;
+    padding: 20px;
+}
+
+aside .section-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside a {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+aside a:hover {
+    color: #FF555B;
+    .button-wrapper:hover {
+        color: #281C59;
+    }   
+}
+
+/* --- Aside Section (All Other Pages) ---*/
+
+.aside-content-block {
+    margin-bottom: 20px;
+}
+
+.aside-content-block p {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* --- Popular Attractions Section --- */
+
+.attractions-section {
+    background-color: #281C59;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+.attractions-section h2 {
+    color: #f1c66b;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    text-align: left;
+}
+
+
+.attractions-card {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.attractions-card img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    object-fit: cover;
+    padding: 20px;
+    float: left;
+    display: block;
+    overflow: hidden;
+
+}
+
+.attractions-card li, p {
+    list-style-type: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px;
+}
+
+/* --- CTA Banner --- */
+
+.cta-banner {
+    background-color: #7DB9EF;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.cta-content {
+    background-color: #281C59;
+    padding: 10px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: white;
+    margin-bottom: 8px;
+    padding: 15px;
+}
+
+.cta-content .btn-visit {
+    background-color: #f1c66b;
+    color: #281C59;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.cta-content .btn-visit a {
+    color: #281C59;
+}
+
+
+.cta-content .btn-visit a:hover {
+    color: #FF555B;
+    .button-wrapper:hover {
+        color: #281C59;
+    } 
+}
+
+
+/* --- Article Form Content ---*/
+
+form {
+    border-radius: 10px;
+    background-color: #281C59;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+label {
+    display: block;
+    color: #7DB9EF;
+    font-family: serif;
+    font-weight: bold;
+}
+
+input[type=text] {
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid #F0F4FF;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid #F0F4FF;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea[name=comment] {
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid #F0F4FF;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #f1c66b;
+    color: #281C59;
+    padding: 14px 30px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    color: #FF555B;
+    .button-wrapper:hover {
+        color: #281C59;
+    }
+}
+
+.form-section {
+    position: relative;
+    background: #281C59;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.form-text h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #f1c66b;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-text p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 15px 30px 15px 30px;
+    text-align: center;
+}
+
+/* --- Aside Table Content --- */
+
+.table-section {
+    position: relative;
+    margin-top: 60px;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+
+.aside-table-content {
+    background: #281C59;
+    padding: 30px 30px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.aside-table-block {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #7DB9EF;
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  text-align: center;
+}
+
+thead tr, th {
+  background-color: #f1c66b;
+  color: #281C59;
+}
+
+/* --- Footer Section --- */
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #281C59;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-section h3 {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.footer-section p {
+    color: #AFE1FF;
+    padding: 5px 0px;
+    display: flex;
+}
+
+.footer-section li {
+    color: #AFE1FF;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.quick-links-list li a {
+    color: #AFE1FF;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+    color: #FF555B;
+}
+
+
+.bottom-bar p {
+    color: white;
+    display: flex;
+    text-align: left;
+    left: 2%;
+    position: absolute;
+    margin-top: 28px;
+    bottom: 2%;
+    font-size: 0.75rem
+}
+
+.bottom-bar a {
+    color:#AFE1FF;
+    text-decoration: none;
+}
+
+.bottom-bar a:hover {
+    text-decoration: none;
+    color: #FF555B;
+}
