@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore North Carolina</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript">
+            function validateit() {
+                var email1 = document.getElementById("txtEmail1").value;
+                var email2 = document.getElementById("txtEmail2").value;
+
+                if (email1 == email2) {
+                    alert("Form successfully submitted.");
+                    }
+                    else {
+                        alert("The email addresses do not match.");
+                    }
+                }
+        </script>
+    </head>
+    <body>
+        <!-- Header Navigation -->
+        <header>
+            <h1><a href="index.html" class="logo">Explore North Carolina</a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="raleigh.html">Raleigh</a></li>
+                    <li><a href="asheville.html">Asheville</a></li>
+                    <li><a href="wilmington.html">Wilmington</a></li>
+                    <li><button><a href="web-form.html">Visitor Form</a></button></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content-text">
+                <h1>Plan Your Visit</h1>
+                <h4>Your Next Adventure Awaits</h4>
+                <p>From stunning landscapes to rich local culture, North Carolina has a special experience for everyone.</p>
+            </div>
+        </section>
+
+        <!-- Container Content -->
+        <div id="container">
+            <!-- Article Form Content -->
+            <article class="article-section">
+                <section class="article-content">
+                    <div class="form-text">
+                        <h2>Visitor Form</h2>
+                        <p>Looking to travel to North Carolina? Let us help you plan your trip today! Please complete the form below for insights, tips, and support to make your visit extraordinary!</p>
+
+                        <!-- Form Field -->
+                        <form class="form-section" id="form1" method="POST" action="#">
+                                <label for="fname">First Name:</label><br>
+                                <input type="text" id="fname" class="name"><br>
+                            
+                                <label for="lname">Last Name:</label><br>
+                                <input type="text" id="lname" class="name"><br>
+                            
+                                <label for="txtEmail1">Email Address:</label><br>
+                                <input type="text" id="txtEmail1" class="email"><br>
+                            
+                                <label for="txtEmail2">Confirm Email Address:</label><br>
+                                <input type="text" id="txtEmail2" class="email"><br>
+                            
+                                <label for="comment">Comments:</label><br>
+                                <textarea name="comment" id="comment" rows="4" cols="50"></textarea><br><br>
+
+                                <input type="submit" id="btnValidate" value="Submit" onclick="validateit()">
+
+                        </form>
+                    </div> 
+                </section>
+            </article>
+
+            <!-- Main Content -->
+            <main></main>
+
+            <!-- Aside Table Content -->
+            <aside class="table-section">
+                <article>
+                    <section class="aside-table-content">
+                        <div class="aside-header">
+                            <h2>Destination Guide</h2>
+                            <section class="aside-table-block">
+                                <p>While you're here, check out more popular destinations within our featured cities! Explore their activity type and best season to visit to get the most out your North Carolina experience!</p>
+                            </section>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>City</th>
+                                        <th>Destination</th>
+                                        <th>Activity</th>
+                                        <th>Best Season</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Asheville</td>
+                                        <td>Blue Ridge Parkway</td>
+                                        <td>Driving & Hiking</td>
+                                        <td>Fall</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Raleigh</td>
+                                        <td>NC State Fair</td>
+                                        <td>Dining & Local Vibe</td>
+                                        <td>Fall</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wilmington</td>
+                                        <td>Airlie Gardens</td>
+                                        <td>Outdoor Adventures</td>
+                                        <td>Spring</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </article>
+            </aside>
+        </div>
+
+       
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <section class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Phone | +1-800-123-4567</p>
+                    <p>Email | info@explorenc.com </p>
+                </section>
+                <section class="footer-section">
+                    <h3>Quick Links</h3>
+                        <nav class="footer-nav">
+                            <ul class="quick-links-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="raleigh.html">Raleigh</a></li>
+                                <li><a href="asheville.html">Asheville</a></li>
+                                <li><a href="wilmington.html">Wilmington</a></li>
+                                <li><a href="web-form.html">Visitor Form</a></li>
+                            </ul>
+                        </nav>    
+                </section>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy;2026 Explore North Carolina. All rights reserved. | All general information provided by "Visit North Carolina | Official NC Travel & Tourism Website." (2026). 
+                    <a href="https://www.visitnc.com/" target="_blank" rel="noopener noreferrer">Visitnc.com</a>. | All images provided by Pexels.com.</p>
+            </div>
+        </footer>
+    </body>
+</html>
