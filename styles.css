@@ -503,6 +503,29 @@ thead tr, th {
   color: #281C59;
 }
 
+/* --- Aside Table Feature Image --- */
+
+.feature-image img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    object-fit: cover;
+    padding: 20px;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+.feature-image p {
+    list-style-type: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px;
+}
+
+
 /* --- Footer Section --- */
 
 footer {
