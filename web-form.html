@@ -12,9 +12,11 @@
 
                 if (email1 == email2) {
                     alert("Form successfully submitted.");
+                    return true;
                     }
                     else {
                         alert("The email addresses do not match.");
+                        return false;
                     }
                 }
         </script>
@@ -56,7 +58,7 @@
                         <p>Looking to travel to North Carolina? Let us help you plan your trip today! Please complete the form below for insights, tips, and support to make your visit extraordinary!</p>
 
                         <!-- Form Field -->
-                        <form class="form-section" id="form1" method="POST" action="#">
+                        <form class="form-section" id="form1" method="GET" action="#">
                                 <label for="fname">First Name:</label><br>
                                 <input type="text" id="fname" class="name"><br>
                             
@@ -73,7 +75,6 @@
                                 <textarea name="comment" id="comment" rows="4" cols="50"></textarea><br><br>
 
                                 <input type="submit" id="btnValidate" value="Submit" onclick="validateit()">
-
                         </form>
                     </div> 
                 </section>
