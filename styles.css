@@ -9,6 +9,7 @@ body {
     font-size: 1rem;
     background-color: #f5f5f5;
 }
+
 /* --- Header Section --- */
 
 li, a, button {
@@ -39,7 +40,6 @@ header h1 a.logo {
 header h1 a:hover {
     color:#FF555B;
     text-decoration: none;
-
 }
 
 .nav-links {
@@ -132,7 +132,6 @@ button a:hover {
     width: auto;
     margin-top: 20px;
 }
-
 
 /* --- Container Content Section --- */
 
@@ -268,7 +267,7 @@ aside a:hover {
     }   
 }
 
-/* --- Aside Section (All Other Pages) ---*/
+/* --- Aside Section (All Other Pages) --- */
 
 .aside-content-block {
     margin-bottom: 20px;
@@ -371,7 +370,6 @@ aside a:hover {
         color: #281C59;
     } 
 }
-
 
 /* --- Article Form Content ---*/
 
@@ -524,7 +522,6 @@ thead tr, th {
     text-align: center;
     margin: 10px;
 }
-
 
 /* --- Footer Section --- */
 
