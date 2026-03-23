@@ -194,7 +194,7 @@ aside {
     padding: 10px;
 }
 
-/* --- Article Section (All Other Pages) ---*/
+/* --- Article Section (All Other Pages) --- */
 
 .content-block h3 {
     font-family: sans-serif;
@@ -298,7 +298,6 @@ aside a:hover {
     text-align: left;
 }
 
-
 .attractions-card {
     text-align: center;
     display: grid;
@@ -315,7 +314,6 @@ aside a:hover {
     float: left;
     display: block;
     overflow: hidden;
-
 }
 
 .attractions-card li, p {
@@ -362,7 +360,6 @@ aside a:hover {
 .cta-content .btn-visit a {
     color: #281C59;
 }
-
 
 .cta-content .btn-visit a:hover {
     color: #FF555B;
@@ -465,7 +462,6 @@ input[type=submit]:hover {
     text-align: center;
     margin-top: 20%;
 }
-
 
 .aside-table-content {
     background: #281C59;
@@ -571,7 +567,6 @@ footer {
     text-decoration: none;
     color: #FF555B;
 }
-
 
 .bottom-bar p {
     color: white;
